@@ -6,8 +6,16 @@ const fs = require('fs/promises');
 const app = express();
 const PORT = 5000;
 
+const corsOptions = {
+  origin: 'https://common-app-7efc6.web.app',
+  methods: 'POST',
+  optionsSuccessStatus: 200,
+};
+
+
 app.use(cors());
 app.use(express.json());
+console.log("updated");
 
 app.post('/submit', async (req, res) => {
   const formData = req.body;
@@ -26,5 +34,5 @@ app.post('/submit', async (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`Server is running on http://localhost:${PORT}`);
+  console.log(`Server is running on https://74.110.105.96:${PORT}`);
 });
