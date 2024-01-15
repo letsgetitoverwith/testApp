@@ -7,13 +7,13 @@ const app = express();
 const PORT = 5000;
 
 const corsOptions = {
-  origin: 'https://common-app-7efc6.web.app',
+  origin: 'https://placeholder.netlify.app', // Use a placeholder URL for now
   methods: 'POST',
   optionsSuccessStatus: 200,
 };
 
 
-app.use(cors());
+app.use(cors(corsOptions));
 app.use(express.json());
 console.log("updated");
 
