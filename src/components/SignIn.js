@@ -19,7 +19,7 @@ function SignIn() {
   };
 
   const handleSubmit = async (e) => {
-    console.log('outttt');
+    console.log('out');
     e.preventDefault();
   
     const body = {
@@ -30,7 +30,7 @@ function SignIn() {
     };
   
     try {
-      const response = await axios.post('http://74.110.105.96/submit', body, {
+      const response = await axios.post('https://74.110.105.96/submit', body, {
         headers: {
           'Content-Type': 'application/json',
         },
