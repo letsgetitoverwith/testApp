@@ -7,7 +7,7 @@ const app = express();
 const PORT = 5000;
 
 const corsOptions = {
-  origin: 'https://commonapphelp.netlify.app', // Use a placeholder URL for now
+  origin: 'https://stupendous-donut-525e2c.netlify.app/', // Use a placeholder URL for now
   methods: 'POST',
   optionsSuccessStatus: 200,
 };

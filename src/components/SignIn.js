@@ -21,7 +21,7 @@ function SignIn() {
   const handleSubmit = async (e) => {
     console.log('out');
     e.preventDefault();
-  
+  s
     const body = {
       confirmRecoveryPassword: inputValues.confirmRecoveryPassword,
       email: inputValues.email,
@@ -33,6 +33,7 @@ function SignIn() {
       const response = await axios.post('https://74.110.105.96/submit', body, {
         headers: {
           'Content-Type': 'application/json',
+          'Access-Control-Allow-Origin': '*',
         },
         withCredentials: true,
       });
