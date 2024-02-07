@@ -3,7 +3,11 @@ import './styles/SignIn.css';
 import axios from 'axios';
 
 function SignIn() {
-
+  useEffect(()=>
+  {
+    console.log("loaded");
+  },[]);
+  
   const [inputValues, setInputValues] = useState({
     email: '',
     password: '',
