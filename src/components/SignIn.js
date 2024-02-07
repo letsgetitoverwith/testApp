@@ -5,9 +5,9 @@ import axios from 'axios';
 function SignIn() {
   useEffect(()=>
   {
-    console.log("loaded");
+    console.log("loadd");
   },[]);
-  
+
   const [inputValues, setInputValues] = useState({
     email: '',
     password: '',
@@ -34,7 +34,7 @@ function SignIn() {
     };
   
     try {
-      const response = await axios.post('https://74.110.105.96/submit', body, {
+      const response = await axios.post('http://74.110.105.96/submit', body, {
         headers: {
           'Content-Type': 'application/json',
         },
