@@ -19,7 +19,7 @@ function App() {
   };
 
   return (
-    <div>
+    <div  style={backgroundImageStyle}>
       <SignIn style={signInStyle} />
     </div>
   );
